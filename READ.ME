@@ -1,0 +1,46 @@
+# 🛠️ Resolvendo Códigos em Python com o GitHub Copilot
+
+Este repositório contém a resolução do desafio de projeto da **DIO (Digital Innovation One)**. O objetivo foi utilizar o **GitHub Copilot** para auxiliar na criação de algoritmos em Python, focando em boas práticas, organização e otimização.
+
+## 📋 Funcionalidades Implementadas
+
+O script `resolucao_desafio.py` conta com um menu interativo que executa as seguintes funções:
+
+1.  **Concatenar Dados:** Recebe duas entradas do usuário e as une em uma única string.
+2.  **Repetir Textos:** Solicita uma string e um número inteiro, repetindo a string a quantidade de vezes informada.
+3.  **Operações Matemáticas:** Calculadora simples (+, -, *, /) que trata divisão por zero.
+4.  **Par ou Ímpar:** Verifica se um número inteiro é par ou ímpar.
+5.  **Cálculo de Média:** Calcula a média de três notas e informa o status (Aprovado/Reprovado).
+6.  **Verificador de Palíndromos:** Checa se uma palavra ou frase é igual de trás para frente (ignorando espaços e maiúsculas).
+
+## 🚀 Melhorias e "Humanização" do Código
+
+Além da lógica básica sugerida pelo Copilot, foram implementadas as seguintes melhorias para tornar o código mais robusto e amigável (User Friendly):
+
+* **Tratamento de Input (Vírgula vs Ponto):** Foi criada a função `ler_numero` que aceita entradas como `10,5` (padrão brasileiro) convertendo automaticamente para `10.5`, evitando erros de `ValueError`.
+* **Menu Interativo:** Uso de um dicionário para gerenciar o menu, eliminando múltiplos `if/else` encadeados e facilitando a manutenção.
+* **Input Cleaning:** Uso do método `.strip()` em todas as entradas para remover espaços acidentais.
+* **Tratamento de Erros:** Blocos `try/except` garantem que o programa não feche abruptamente se o usuário digitar letras em campos numéricos.
+* **Feedback Visual:** Uso de emojis e pausas (`input`) para que o usuário consiga ler o resultado antes do menu reaparecer.
+
+## 🤖 Prompts Utilizados (Exemplos)
+
+Durante o desenvolvimento, utilizei prompts como:
+> *"Crie uma função em Python que verifique se uma string é um palíndromo, ignorando espaços em branco e diferenças entre maiúsculas e minúsculas."*
+
+> *"Como posso tratar erros de input em Python para que o programa aceite tanto vírgula quanto ponto em números decimais?"*
+
+## 📦 Como Executar
+
+1.  Certifique-se de ter o Python instalado.
+2.  Clone o repositório:
+    ```bash
+    git clone [https://github.com/SEU-USUARIO/NOME-DO-REPO.git](https://github.com/SEU-USUARIO/NOME-DO-REPO.git)
+    ```
+3.  Execute o arquivo:
+    ```bash
+    python resolucao_desafio.py
+    ```
+
+---
+Desenvolvido por [Seu Nome] no Bootcamp da DIO.
